@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: #252525;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1 span {
+    color: #222;
+    background-color: #a83557;
+    font-family: sans-serif;
+    border: 0;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+}
+
+.user-container p {
+    font-size: 20px;
+}
+
+.user-input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-input {
+    width: 80%;
+    padding: 0.4rem;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+    border: 0;
+}
+
+#search-btn {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: 0;
+    background-color: #994992;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #994992;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    background: conic-gradient(#994992 var(--progress-degree, 0%), #283a2e 0%);
+}
+
+.circle span {
+    position: relative;
+    z-index: 2;
+}
+
+.progress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stats-card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    display: none;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+.card {
+    background-color: rgb(230, 146, 44);
+    width: 40%;
+    max-width: 290px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    min-height: 4rem;
+}
